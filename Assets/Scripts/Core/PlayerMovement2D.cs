@@ -3,48 +3,37 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement2D : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
-
     private Rigidbody2D rb;
     private Vector2 movement;
+
+    [Header("Player Items")]
+    [SerializeField] private GameObject mobile;
+
+
+   [Header("Input Actions")]   // Nos ayudarán a tener un mejor maneclo de las teclas de entrada, y nos permitirá cambiar las teclas de entrada sin tener que modificar el código.
+    [SerializeField] private InputActionReference movementInput;
+    [SerializeField] private InputActionReference interactionInput;
+
+    [Header("Movement Settings")]
+    [SerializeField] private float speed = 5f;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
+
     private void Update()
     {
-        Keyboard keyboard = Keyboard.current;
-
-        if (keyboard == null)
+        if (Keyboard.current.tabKey.wasPressedThisFrame)
         {
-            movement = Vector2.zero;
-            return;
+            mobile.SetActive(!mobile.activeSelf);
         }
-
-        float horizontal = 0f;
-        float vertical = 0f;
-
-        if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
-            horizontal -= 1f;
-
-        if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
-            horizontal += 1f;
-
-        if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)
-            vertical -= 1f;
-
-        if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)
-            vertical += 1f;
-
-        movement = new Vector2(horizontal, vertical).normalized;
+        movement = movementInput.action.ReadValue<Vector2>().normalized;
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(
-            rb.position + movement * speed * Time.fixedDeltaTime
-        );
+        rb.linearVelocity = movement * speed;
     }
 }
