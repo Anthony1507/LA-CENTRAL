@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef9f9123a8c4e9459908a88cb01e782, type: 3}
+  m_Name: Case07_CasaAzul
+  m_EditorClassIdentifier: Assembly-CSharp::IncidentDefinition
+  incidentId: CASE07
+  title: La pelicula de la Casa Azul
+  description: En Casa Azul quieren el canal Cultura, pero sin tanto ruido. Cambia al canal correcto y deja el volumen entre 25 y 40.
+  tutorialWithoutTimeBonus: 0
+  targetTimeSeconds: 100
+  initialDeviceStates:
+  - buildingId: B09
+    deviceId: TV_MAIN
+    poweredOn: 1
+    volume: 75
+    channelIndex: 2
+  objectives:
+  - buildingId: B09
+    deviceId: TV_MAIN
+    checkVolume: 1
+    minVolume: 25
+    maxVolume: 40
+    checkPower: 0
+    requiredPoweredOn: 1
+    checkChannel: 1
+    requiredChannelIndex: 1

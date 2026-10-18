@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3b36bf9b50224cac64ec2398fa461, type: 3}
+  m_Name: Phone_CASE09
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneDialogueDefinition
+  incidentId: CASE09
+  callerName: Encargado del Centro Civico
+  lines:
+  - speaker: ENCARGADO
+    text: Buenas tardes. Estamos preparando un evento importante en Plaza Mayor.
+  - speaker: ENCARGADO
+    text: El altavoz del Centro Civico esta apagado. Enciendelo y ajusta el volumen entre 25 y 35.
+  - speaker: PROTAGONISTA
+    text: B10, entonces. Suena sencillo, pero tengo la sensacion de que se acerca algo grande.
+  - speaker: OPERADORA
+    text: Esta reparacion es importante. Vamos a necesitar tus equipos conectados.

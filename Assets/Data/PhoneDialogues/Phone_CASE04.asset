@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3b36bf9b50224cac64ec2398fa461, type: 3}
+  m_Name: Phone_CASE04
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneDialogueDefinition
+  incidentId: CASE04
+  callerName: Florista del Barrio
+  lines:
+  - speaker: FLORISTA
+    text: "\xA1Socorro! Hay una radio que no deja trabajar a nadie por aqui."
+  - speaker: FLORISTA
+    text: Creo que viene de Casa del Farol, junto a mi Floristeria.
+  - speaker: PROTAGONISTA
+    text: "B02, \xBFverdad? Mejor confirmamos antes de tocar el aparato equivocado."
+  - speaker: FLORISTA
+    text: "Bajala a 20 o menos, por favor. \xA1Mis plantas necesitan paz!"

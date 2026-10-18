@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef9f9123a8c4e9459908a88cb01e782, type: 3}
+  m_Name: Case08_EnsayoADeshoras
+  m_EditorClassIdentifier: Assembly-CSharp::IncidentDefinition
+  incidentId: CASE08
+  title: Ensayo a deshoras
+  description: El Estudio del Barrio tiene su altavoz a todo volumen. Bajalo a 25 o menos, pero mantenlo encendido.
+  tutorialWithoutTimeBonus: 0
+  targetTimeSeconds: 100
+  initialDeviceStates:
+  - buildingId: B08
+    deviceId: SPEAKER_MAIN
+    poweredOn: 1
+    volume: 95
+    channelIndex: 0
+  objectives:
+  - buildingId: B08
+    deviceId: SPEAKER_MAIN
+    checkVolume: 1
+    minVolume: 0
+    maxVolume: 25
+    checkPower: 1
+    requiredPoweredOn: 1
+    checkChannel: 0
+    requiredChannelIndex: 0

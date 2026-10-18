@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3b36bf9b50224cac64ec2398fa461, type: 3}
+  m_Name: Phone_CASE08
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneDialogueDefinition
+  incidentId: CASE08
+  callerName: Productora del Estudio
+  lines:
+  - speaker: PRODUCTORA
+    text: "\xA1Tenemos una grabacion! El altavoz del Estudio del Barrio esta al maximo."
+  - speaker: PRODUCTORA
+    text: Bajalo a 25 o menos, pero no lo apagues. Necesitamos escucharlo para seguir trabajando.
+  - speaker: PROTAGONISTA
+    text: Entendido. B08. Control de volumen fino, sin dejar a nadie sin sonido.
+  - speaker: PRODUCTORA
+    text: Gracias. Como nos hagan repetir otra toma, nos quedamos a vivir aqui.

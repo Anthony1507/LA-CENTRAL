@@ -107,6 +107,21 @@ public sealed class RepairTerminalUI : MonoBehaviour
     {
         if (IsOpen || target == null || panelRoot == null)
             return false;
+        if (PhoneNarrativeController.HasPendingCall)
+        {
+            GameplayHUD hud =
+                FindFirstObjectByType<GameplayHUD>();
+
+            if (hud != null)
+            {
+                hud.ShowFeedback(
+                    "¡Tienes una llamada pendiente! " +
+                    "Pulsa C o haz clic en el celular antes de reparar."
+                );
+            }
+
+            return false;
+        }
 
         DeviceController[] devices = target.Devices;
 
@@ -166,7 +181,6 @@ public sealed class RepairTerminalUI : MonoBehaviour
 
         action(selectedDevice);
 
-        // Una acción puede terminar la misión y cerrar la terminal.
         if (IsOpen)
             Refresh();
     }

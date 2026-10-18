@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3b36bf9b50224cac64ec2398fa461, type: 3}
+  m_Name: Phone_CASE02
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneDialogueDefinition
+  incidentId: CASE02
+  callerName: Encargado del Cafe Esquina
+  lines:
+  - speaker: ENCARGADO
+    text: "\xA1Buenas! Soy del Cafe Esquina. Nuestra radio esta tan bajita que ni se escucha."
+  - speaker: ENCARGADO
+    text: Necesito un volumen entre 35 y 50. No quiero que parezca una discoteca.
+  - speaker: PROTAGONISTA
+    text: Entendido. Un cafe con ambiente, no un concierto improvisado.
+  - speaker: OPERADORA
+    text: Al terminar esta reparacion activaremos tu terminal de acceso remoto.

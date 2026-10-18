@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3b36bf9b50224cac64ec2398fa461, type: 3}
+  m_Name: Phone_CASE07
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneDialogueDefinition
+  incidentId: CASE07
+  callerName: Familia de Casa Azul
+  lines:
+  - speaker: VECINO
+    text: Hola. En Casa Azul queremos ver Cultura, pero alguien dejo Cine a volumen 75.
+  - speaker: VECINO
+    text: Pon el canal Cultura y deja el volumen entre 25 y 40.
+  - speaker: PROTAGONISTA
+    text: Primera visita a B09. Habra que encontrar su puerta.
+  - speaker: PROTAGONISTA
+    text: "Oye, \xBFtu tambien pondrias una pelicula a volumen 75? Mejor no me respondas."

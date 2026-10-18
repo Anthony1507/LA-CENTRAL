@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3b36bf9b50224cac64ec2398fa461, type: 3}
+  m_Name: Phone_CASE10
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneDialogueDefinition
+  incidentId: CASE10
+  callerName: Coordinadora del Concierto
+  lines:
+  - speaker: COORDINADORA
+    text: "\xA1Tecnico! \xA1El concierto empieza muy pronto! Y aun quedan tres equipos sin ajustar."
+  - speaker: COORDINADORA
+    text: 'Sala de Ensayo, B11: altavoz encendido, volumen entre 20 y 30.'
+  - speaker: COORDINADORA
+    text: 'Plaza Mayor, B12: altavoz encendido, volumen entre 40 y 50.'
+  - speaker: COORDINADORA
+    text: 'Centro Civico, B10: usa la RADIO. Emisora 101.7, encendida y volumen 30.'
+  - speaker: PROTAGONISTA
+    text: "Bueno, compa\xF1ero. Diez incidencias. Un barrio entero confiando en nosotros."
+  - speaker: PROTAGONISTA
+    text: "Si hacemos esto bien, podremos disfrutar del concierto. \xBFQue podria salir mal?"

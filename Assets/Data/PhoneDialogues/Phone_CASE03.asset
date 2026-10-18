@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3b36bf9b50224cac64ec2398fa461, type: 3}
+  m_Name: Phone_CASE03
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneDialogueDefinition
+  incidentId: CASE03
+  callerName: Vecina de Casa Almendro
+  lines:
+  - speaker: VECINA
+    text: "\xA1Otra vez la television! Ahora esta en el canal Cine y queremos ver Local."
+  - speaker: PROTAGONISTA
+    text: Volvemos a Casa Almendro... aunque esta vez no hace falta caminar.
+  - speaker: OPERADORA
+    text: Pulsa TAB para abrir la terminal remota. Selecciona B01 y cambia de canal.
+  - speaker: PROTAGONISTA
+    text: Dejaremos el volumen en 30. Mira que la tecnologia bien usada ahorra piernas.
