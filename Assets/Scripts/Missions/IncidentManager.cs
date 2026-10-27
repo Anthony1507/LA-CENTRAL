@@ -370,16 +370,14 @@ public sealed class IncidentManager : MonoBehaviour
         );
     }
 
-    private void HandleDeviceChanged(
-        DeviceController changedDevice)
+    private void HandleDeviceChanged(DeviceController changedDevice)
     {
         if (suppressDeviceEvents || !CanInteract)
             return;
 
         bool belongsToIncident = false;
 
-        foreach (DeviceObjective objective
-                 in current.objectives)
+        foreach (DeviceObjective objective in current.objectives)
         {
             if (objective.Targets(changedDevice))
             {
@@ -394,13 +392,8 @@ public sealed class IncidentManager : MonoBehaviour
             return;
         }
 
-        if (terminal != null &&
-            terminal.IsOpen &&
-            !terminal.IsRemoteSession &&
-            string.Equals(
-                terminal.OpenBuildingId,
-                changedDevice.BuildingId,
-                StringComparison.OrdinalIgnoreCase))
+        if (terminal != null && terminal.IsOpen && !terminal.IsRemoteSession &&
+            string.Equals( terminal.OpenBuildingId, changedDevice.BuildingId, StringComparison.OrdinalIgnoreCase))
         {
             physicalRepairs.Add(changedDevice.BuildingId);
         }
